@@ -1,0 +1,6 @@
+<div class="navbar">
+    <a href="/"><img src="https://i.ibb.co/vZr924B/Rat-Launchers-Small.png" width="5%"></a>
+    {% for subpage in site.data.navigation.nav %}
+    <a href="{{ subpage.link }}">{{subpage.title}}</a>
+    {% endfor %}
+</div>

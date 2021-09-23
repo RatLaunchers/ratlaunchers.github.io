@@ -1,0 +1,84 @@
+---
+---
+body {
+    background-color: #545454;
+    color: #5271FF;
+    // font-family: monospace;
+}
+
+.navbar {
+    z-index: 2;
+    position: sticky;
+    top: 0;
+}
+
+.navbar a {
+    color: #5271FF;
+    text-decoration: none;
+    font-size: 1.5em;
+}
+
+.rat-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 90vh;
+}
+.spin-rat {
+    animation: 20s linear 0s infinite running rotate;
+}
+
+.spin-rat img:hover {
+    animation: 0.2s linear bob;
+}
+
+@keyframes rotate {
+    to {
+        transform: rotate(1turn);
+    }
+}
+
+@keyframes bob {
+    50% {
+        transform: scale(120%);
+    }
+
+    to {
+        transform: scale(100%);
+    }
+}
+
+.blog-posts-container {
+    align-items: center;
+}
+
+.blog-posts-container h2 {
+    align-items: center;
+    text-align: center;
+}
+
+.blog-post-card {
+    display: inline-block;
+    margin-left: 25%;
+    border: #5271FF solid 1px;
+    border-radius: 2vh;
+    width: 50%;
+    color: #5271FF;
+    text-decoration: none;
+    text-align: center;
+}
+
+pre, code {
+    background-color: #454545;
+}
+
+code { padding: 1px 5px; }
+
+pre { padding: 8px 12px; overflow-x: auto; }
+
+pre > code { border: 0; padding-right: 0; padding-left: 0; }
+
+.post-content {
+    padding-left: 20%;
+    padding-right: 20%;
+}
