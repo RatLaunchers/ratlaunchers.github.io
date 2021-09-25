@@ -98,6 +98,12 @@ pre > code { border: 0; padding-right: 0; padding-left: 0; }
 .post-content {
     padding-left: 20%;
     padding-right: 20%;
+    letter-spacing: normal;
+    line-height: 1.5;
+}
+
+.post-content * {
+    padding: 2%;
 }
 
 .post-content img:nth-child(even) {
