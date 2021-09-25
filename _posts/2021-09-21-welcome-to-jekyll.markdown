@@ -4,6 +4,7 @@ title:  "Welcome to Jekyll!"
 date:   2021-09-21 22:45:05 -0400
 categories: jekyll update
 description: something something description
+header: https://t4.ftcdn.net/jpg/02/76/08/07/360_F_276080724_hltnCyDjcqAyRtLzDYo3T2jXbBtCD7fl.jpg
 ---
 You’ll find this post in your `_posts` directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different ways, but the most common way is to run `jekyll serve`, which launches a web server and auto-regenerates your site when a file is updated.
 
