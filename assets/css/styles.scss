@@ -85,23 +85,6 @@ img {
     text-align: center;
 }
 
-pre, code {
-    background-color: #454545;
-}
-
-code { padding: 1px 5px; }
-
-pre { padding: 8px 12px; overflow-x: auto; }
-
-pre > code { border: 0; padding-right: 0; padding-left: 0; }
-
-.post-content {
-    padding-left: 20%;
-    padding-right: 20%;
-    letter-spacing: normal;
-    line-height: 1.5;
-}
-
 .post-content * {
     padding: 2%;
 }
@@ -111,6 +94,25 @@ pre > code { border: 0; padding-right: 0; padding-left: 0; }
 }
 .post-content img:nth-child(odd) {
     float: right;
+}
+
+pre, code {
+    background-color: #454545;
+    line-height: normal;
+    letter-spacing: normal;
+}
+
+code { padding: 1px 5px !important; }
+
+pre { padding: 8px 12px !important; overflow-x: auto; }
+
+pre > code { border: 0; padding-right: 0 !important; padding-left: 0 !important; }
+
+.post-content {
+    padding-left: 20%;
+    padding-right: 20%;
+    letter-spacing: normal;
+    line-height: 1.5;
 }
 
 .header-image {
