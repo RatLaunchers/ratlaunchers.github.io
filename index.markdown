@@ -4,4 +4,5 @@
 
 layout: home
 title: Home
+about: Something about us idk idk *btw markdown support* aaaaaaaaaaaaaa isyfgisdgf sf s7yrf sdgb sdifg sfiuyg rtg fsfg sidfg sdifg s8dif tgsdf9y wper9fy sfdighs dfis f9syf s 
 ---

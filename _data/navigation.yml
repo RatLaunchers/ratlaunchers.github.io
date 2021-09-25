@@ -1,3 +1,9 @@
 nav:
   - title: About
     link: /about
+  - title: Blog
+    link: /blog
+  - title: Gallery
+    link: /gallery
+  - title: Resources
+    link: /resources

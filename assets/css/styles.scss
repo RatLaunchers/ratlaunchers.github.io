@@ -3,7 +3,7 @@
 body {
     background-color: #545454;
     color: #5271FF;
-    // font-family: monospace;
+    font-family: "open sans", "roboto";
 }
 
 .navbar {
@@ -58,10 +58,12 @@ body {
 }
 
 .blog-post-card {
-    display: inline-block;
-    margin-left: 25%;
+    display: block;
+    margin: auto;
+    margin-bottom: 1%;
     border: #5271FF solid 1px;
     border-radius: 2vh;
+    min-width: 320px;
     width: 50%;
     color: #5271FF;
     text-decoration: none;
@@ -81,4 +83,18 @@ pre > code { border: 0; padding-right: 0; padding-left: 0; }
 .post-content {
     padding-left: 20%;
     padding-right: 20%;
+}
+
+.navbar {
+    background-color: #454545;
+    margin: 0;
+}
+
+.navbar a {
+    padding: 2%;
+    text-align: center;
+}
+
+.navbar a:hover {
+    color: #f9fbef;
 }

@@ -2,16 +2,27 @@
 layout: default
 ---
 <div class="rat-container">
-    <div class="spin-rat"><img src="/Rat-Launchers-Small.png" alt="rat"></div>
+    <div class="spin-rat"><img src="/assets/images/Rat-Launchers-Small.png" alt="rat"></div>
+</div>
+<div style="width: 50%; text-align: center; margin: auto;">
+    {{ page.about | markdownify }}
+</div>
+<div style="width: 50%; text-align: center; margin: auto;">
+    <h2>Sponsors</h2>
+    {% for sponsor in site.data.sponsors.sponsors %}
+    <a href="{{ sponsor.link }}">
+        <img src="{{ sponsor.image }}" alt = "{{sponsor.name}}">
+    </a>
+    {% endfor %}
 </div>
 <div class="blog-posts-container">
-    <h2>Blog Posts</h2>
-    {% for post in site.posts %}
+    <h2>Latest Rat Post</h2>
+    {% for post in site.posts limit: 1 %}
     <a href="{{ post.url }}" class="blog-post-card">
         <div>
             <h3>{{ post.title }}</h3>
             <p>{{ post.date | date: "%B %-d, %Y" }}</p>
-            <p>{{ post.excerpt }}</p>
+            <p>{{ post.description }}</p>
         </div>
     </a>
     {% endfor %}
