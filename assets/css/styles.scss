@@ -3,20 +3,30 @@
 @import url("/assets/css/native.css");
 body {
     background-color: #545454;
-    color: #5271FF;
+    color: #f9fbef;
     font-family: "open sans", "roboto";
+    margin: 0;
+    padding: 0;
 }
 
 .navbar {
     z-index: 2;
     position: sticky;
     top: 0;
+    background-color: #454545;
+    width: 100%;
 }
 
 .navbar a {
     color: #5271FF;
     text-decoration: none;
     font-size: 1.5em;
+    padding-right: 5%;
+    text-align: center;
+}
+
+.navbar a:hover {
+    color: #f9fbef;
 }
 
 .rat-container {
@@ -84,18 +94,4 @@ pre > code { border: 0; padding-right: 0; padding-left: 0; }
 .post-content {
     padding-left: 20%;
     padding-right: 20%;
-}
-
-.navbar {
-    background-color: #454545;
-    margin: 0;
-}
-
-.navbar a {
-    padding: 2%;
-    text-align: center;
-}
-
-.navbar a:hover {
-    color: #f9fbef;
 }
