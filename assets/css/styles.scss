@@ -19,14 +19,20 @@ img {
     top: 0;
     background-color: #454545;
     width: 100%;
+    display: table;
+}
+
+.navbar b {
+    display: table-cell;
+    width: 15%;
+    vertical-align: middle;
+    text-align: center;
 }
 
 .navbar a {
     color: #5271FF;
     text-decoration: none;
     font-size: 1.5em;
-    padding-right: 5%;
-    text-align: center;
 }
 
 .navbar a:hover {
