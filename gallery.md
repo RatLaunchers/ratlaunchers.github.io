@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: gallery
 title: Gallery
 permalink: /gallery
 ---

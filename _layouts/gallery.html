@@ -1,0 +1,8 @@
+---
+layout: default
+---
+{% for image in site.static_files %}
+  {% if image.path contains '/gallery' %}
+    <img src=" {{ image.path }}">
+  {% endif %}
+{% endfor %}
