@@ -20,13 +20,7 @@ layout: default
     <div class="blog-posts-container">
         <h2>Latest Rat Post</h2>
         {% for post in site.posts limit: 1 %}
-        <a href="{{ post.url }}" class="blog-post-card">
-            <div>
-                <h3>{{ post.title }}</h3>
-                <p>{{ post.date | date: "%B %-d, %Y" }}</p>
-                <p>{{ post.description }}</p>
-            </div>
-        </a>
+            {% include blog_card.html %}
         {% endfor %}
     </div>
 </div>

@@ -101,6 +101,15 @@ footer a {
     text-align: center;
 }
 
+.blog-post-card img {
+    padding: 5%;
+    width: 30%;
+    height: 100%;
+    background-repeat: no-repeat;
+    object-fit: contain;
+    background-position: center;
+}
+
 .post-content * {
     padding: 2%;
 }
@@ -141,7 +150,9 @@ pre > code { border: 0; padding-right: 0 !important; padding-left: 0 !important;
 
 .about-person-cards {
     display: inline-block;
-    margin: auto;
+    margin: 1%;
     width: 30%;
     text-align: center;
+    border: #5271FF solid 1px;
+    border-radius: 2vh;
 }
