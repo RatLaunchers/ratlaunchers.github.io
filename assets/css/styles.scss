@@ -1,5 +1,6 @@
 ---
 ---
+
 @import url("/assets/css/native.css");
 body {
     background-color: #545454;
@@ -40,7 +41,7 @@ footer a {
 }
 
 .navbar a {
-    color: #5271FF;
+    color: #5271ff;
     text-decoration: none;
     font-size: 1.5em;
 }
@@ -92,7 +93,7 @@ footer a {
     display: block;
     margin: auto;
     margin-bottom: 1%;
-    border: #5271FF solid 1px;
+    border: #5271ff solid 1px;
     border-radius: 2vh;
     min-width: 320px;
     width: 50%;
@@ -110,6 +111,12 @@ footer a {
     background-position: center;
 }
 
+.blog-post-time {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
 .post-content * {
     padding: 2%;
 }
@@ -121,17 +128,27 @@ footer a {
     float: right;
 }
 
-pre, code {
+pre,
+code {
     background-color: #454545;
     line-height: normal;
     letter-spacing: normal;
 }
 
-code { padding: 1px 5px !important; }
+code {
+    padding: 1px 5px !important;
+}
 
-pre { padding: 8px 12px !important; overflow-x: auto; }
+pre {
+    padding: 8px 12px !important;
+    overflow-x: auto;
+}
 
-pre > code { border: 0; padding-right: 0 !important; padding-left: 0 !important; }
+pre > code {
+    border: 0;
+    padding-right: 0 !important;
+    padding-left: 0 !important;
+}
 
 .post-content {
     padding-left: 20%;
@@ -153,6 +170,6 @@ pre > code { border: 0; padding-right: 0 !important; padding-left: 0 !important;
     margin: 1%;
     width: 30%;
     text-align: center;
-    border: #5271FF solid 1px;
+    border: #5271ff solid 1px;
     border-radius: 2vh;
 }
