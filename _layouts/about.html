@@ -3,6 +3,7 @@ layout: default
 ---
 <div style="text-align: center;">
     {{ content | markdownify }}
+    <h2>The Team</h2>
     {% for person in site.data.about.about %}
         <div class="about-person-cards">
             <h5>{{ person.name }}</h5>
@@ -10,4 +11,6 @@ layout: default
             <p>{{ person.description }}</p>
         </div>
     {% endfor %}
+    <h2>Mission</h2>
+    {{ page.mission | markdownify }}
 </div>
