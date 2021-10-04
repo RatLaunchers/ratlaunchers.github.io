@@ -2,8 +2,15 @@
 layout: default
 ---
 <div style="text-align: center;">
-  {% for image in site.static_files %}
+  {% assign sorted = site.static_files | sort: 'modified_time' | reverse %}
+  {% assign last_date = image.modified_time | date: "%B %-d, %Y" %}
+  {% for image in sorted %}
     {% if image.path contains '/gallery' %}
+    {% assign current_date = image.modified_time | date: "%B %-d, %Y" %}
+      {% if last_date != current_date %}
+        <h2> {{ current_date }} </h2><hr>
+        {% assign last_date = current_date %}
+      {% endif %}
       <img src=" {{ image.path }}">
     {% endif %}
   {% endfor %}
