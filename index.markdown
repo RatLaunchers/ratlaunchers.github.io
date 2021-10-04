@@ -4,5 +4,5 @@
 
 layout: home
 title: Home
-about: Welcome! We're five Grade 12 students from the Toronto area that just so happen to know one another. We're passionate about various topics, from code to engineering, and we come together as a strong team able to tackle all aspects of the CanSat Design Challenge. Our team name of Rat Launchers is an inside joke - yes, we're all very funny :). Feel free to look around our site and learn more about us, read regular updates on our progress, see photos of our work, and access the content we create!
+about: Welcome! We're five Grade 12 students from the Toronto area that just so happen to know one another. We're passionate about various topics, from coding to engineering, and we come together as a strong team able to tackle all aspects of the CanSat Design Challenge. Our team name of Rat Launchers is an inside joke - yes, we're all very funny :). Feel free to look around our site and learn more about us, read regular updates on our progress, see photos of our work, and access the content we create!
 ---
