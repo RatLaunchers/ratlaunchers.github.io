@@ -1,6 +1,9 @@
-<div class="navbar">
-    <a href="/"><img src="/assets/images/Rat-Launchers-Small-Darker.png" width="10%"></a>
+<nav>
+    <a href="/" class="image-nav">
+        <img src="/assets/images/logos/RatFinals2-700x700.png">
+        <div>Home</div>
+    </a>
     {% for subpage in site.data.navigation.nav %}
-    <b><a href="{{ subpage.link }}">{{subpage.title}}</a></b>
+    <a href="{{ subpage.link }}">{{subpage.title}}</a>
     {% endfor %}
-</div>
+</nav>
