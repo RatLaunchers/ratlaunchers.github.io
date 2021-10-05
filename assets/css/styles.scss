@@ -12,6 +12,7 @@ $rdarkgrey: #3d3d5c;
 $rred: #a45444;
 $rfont: #f9fbef;
 $rbackground: #545454;
+$rforeground: #605f64
 
 :root {
     background-color: $rbackground;
@@ -19,6 +20,8 @@ $rbackground: #545454;
     font-family: "Open Sans", sans-serif;
     scrollbar-width: thin;
     scrollbar-color: $rblue $rbackground;
+    scroll-behavior: smooth;
+    scroll-padding: 6rem;
 }
 
 @media (min-width: 1000px) {
@@ -64,7 +67,6 @@ nav {
         align-items: center;
         font-size: 3rem;
         font-weight: 700;
-        
 
         &:hover {
             background-color: $rgreen;
@@ -74,7 +76,7 @@ nav {
         }
         &.image-nav {
             display: flex;
-            justify-content: center;
+            justify-content: space-between;
             padding-left: 2rem;
             padding-right: 2rem;
             box-sizing: border-box;
@@ -86,6 +88,15 @@ nav {
                 }
             }
         }
+
+        @keyframes nav-hover {
+            from {
+                transform: rotate(0deg);
+            }
+            to {
+                transform: rotate(25deg);
+            }
+        }
     }
 }
 
@@ -94,12 +105,90 @@ img {
     max-height: 100%;
 }
 
-@keyframes nav-hover {
-    from {
-        transform: rotate(0deg);
+p {
+    width: 50rem;
+    font-size: 1.3rem;
+    line-height: 1.8rem;
+}
+
+span.p-disable>p {
+    width: fit-content;
+    font-size: 1rem;
+}
+
+.home {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+
+    .content {
+        width: Max(50rem, 80%);
+        padding: 2rem;
+        background-color: $rforeground;
+        border-radius: 1rem;
+        box-sizing: border-box;
+        box-shadow: 2rem 2rem 1.5rem $rdarkgrey;
+        margin-bottom: 10rem;
     }
-    to {
-        transform: rotate(25deg);
+
+    .sponsor {
+        width: 20rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        font-size: 1.2rem;
+        font-weight: 500;
+    }
+
+    .rat-container {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        height: 90vh;
+        width: 100%;
+    }
+    .spin-rat {
+        animation: 20s linear 0s infinite running rotate;
+        height: 60%;
+    }
+
+    .content-arrow {
+        margin-top: 5rem;
+        color: $rfont;
+        font-size: 5rem;
+        text-decoration: none;
+        height: 7rem;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        &:hover {
+            color: $rgreen;
+            background-color: $rdarkgrey;
+        }
+    }
+
+    .spin-rat img:hover {
+        animation: 0.2s linear bob;
+    }
+
+    @keyframes rotate {
+        to {
+            transform: rotate(1turn);
+        }
+    }
+
+    @keyframes bob {
+        50% {
+            transform: scale(120%);
+        }
+
+        to {
+            transform: scale(100%);
+        }
     }
 }
 
@@ -141,36 +230,6 @@ img {
 
 // .navbar a:hover {
 //     color: #f9fbef;
-// }
-
-// .rat-container {
-//     display: flex;
-//     align-items: center;
-//     justify-content: center;
-//     height: 90vh;
-// }
-// .spin-rat {
-//     animation: 20s linear 0s infinite running rotate;
-// }
-
-// .spin-rat img:hover {
-//     animation: 0.2s linear bob;
-// }
-
-// @keyframes rotate {
-//     to {
-//         transform: rotate(1turn);
-//     }
-// }
-
-// @keyframes bob {
-//     50% {
-//         transform: scale(120%);
-//     }
-
-//     to {
-//         transform: scale(100%);
-//     }
 // }
 
 // .blog-posts-container {
