@@ -273,6 +273,28 @@ span.p-disable > p {
     }
 }
 
+.header-image {
+    padding: 10%;
+    text-align: center;
+}
+
+.post-content {
+    width: 70%;
+    margin: auto;
+}
+
+.post-content img {
+    padding: 5%;
+}
+
+.post-content img:nth-child(even) {
+    float: left;
+}
+
+.post-content img:nth-child(odd) {
+    float: right
+}
+
 // pre,
 // code {
 //     background-color: #454545;
