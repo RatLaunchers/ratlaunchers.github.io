@@ -1,7 +1,7 @@
 ---
 layout: default
 ---
-<div style="text-align: center;">
+<div class="gallery page" style="text-align: center;">
   {% assign sorted = site.static_files | sort: 'modified_time' | reverse %}
   {% assign last_date = image.modified_time | date: "%B %-d, %Y" %}
   {% for image in sorted %}
