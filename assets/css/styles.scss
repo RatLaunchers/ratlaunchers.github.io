@@ -116,22 +116,25 @@ span.p-disable>p {
     font-size: 1rem;
 }
 
-.home {
+.content {
+    width: Max(50rem, 80%);
+    padding: 2rem;
+    background-color: $rforeground;
+    border-radius: 1rem;
+    box-sizing: border-box;
+    box-shadow: 2rem 2rem 1.5rem $rdarkgrey;
+    margin-bottom: 2.5rem;
+    margin-top: 2.5rem;
+}
+
+.page {
     display: flex;
     flex-direction: column;
     align-items: center;
     width: 100%;
+}
 
-    .content {
-        width: Max(50rem, 80%);
-        padding: 2rem;
-        background-color: $rforeground;
-        border-radius: 1rem;
-        box-sizing: border-box;
-        box-shadow: 2rem 2rem 1.5rem $rdarkgrey;
-        margin-bottom: 10rem;
-    }
-
+.home {
     .sponsor {
         width: 20rem;
         display: flex;
@@ -188,6 +191,20 @@ span.p-disable>p {
 
         to {
             transform: scale(100%);
+        }
+    }
+}
+
+.about {
+    .person-container{
+        display: grid;
+        grid-template-columns: 33% 33% 33%;
+        grid-template-rows: auto auto;
+        gap: 1rem;
+    }
+    .person {
+        p{
+            width: 100%;
         }
     }
 }

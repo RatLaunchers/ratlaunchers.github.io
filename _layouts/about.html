@@ -1,16 +1,18 @@
 ---
 layout: default
 ---
-<div style="text-align: center;">
-    {{ content | markdownify }}
-    <h2>The Team</h2>
-    {% for person in site.data.about.about %}
-        <div class="about-person-cards">
-            <h5>{{ person.name }}</h5>
-            <img src=" {{ person.image }} ">
-            <p>{{ person.description }}</p>
+<div class="about page">
+    <div class="content">{{ content | markdownify }}</div>
+    <div class="content">
+        <h2>The Team</h2>
+        <div class="person-container">
+            {% for person in site.data.about.about %}
+            <div class="person">
+                <h3>{{ person.name }}</h3>
+                <img src=" {{ person.image }} ">
+                <p>{{ person.description }}</p>
+            </div>
+            {% endfor %}
         </div>
-    {% endfor %}
-    <h2>Mission</h2>
-    {{ page.mission | markdownify }}
+    </div>
 </div>
