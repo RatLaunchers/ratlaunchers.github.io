@@ -12,7 +12,7 @@ $rdarkgrey: #3d3d5c;
 $rred: #a45444;
 $rfont: #f9fbef;
 $rbackground: #545454;
-$rforeground: #605f64
+$rforeground: #605f64;
 
 :root {
     background-color: $rbackground;
@@ -111,7 +111,7 @@ footer {
     display: flex;
     justify-content: center;
     align-items: center;
-    a{
+    a {
         color: $rfont;
         text-decoration: none;
         width: 50%;
@@ -121,10 +121,10 @@ footer {
         align-items: center;
         justify-content: center;
         border-radius: 0.5rem;
-        i{
+        i {
             margin-right: 1rem;
         }
-        &:hover{
+        &:hover {
             background-color: $rred;
         }
     }
@@ -141,7 +141,7 @@ p {
     line-height: 1.8rem;
 }
 
-span.p-disable>p {
+span.p-disable > p {
     width: fit-content;
     font-size: 1rem;
 }
@@ -226,106 +226,52 @@ span.p-disable>p {
 }
 
 .about {
-    .person-container{
+    .person-container {
         display: grid;
         grid-template-columns: 33% 33% 33%;
         grid-template-rows: auto auto;
         gap: 1rem;
     }
     .person {
-        p{
+        p {
             width: 100%;
         }
     }
 }
 
-// img {
-//     max-width: 100%;
-// }
-
-// footer {
-//     width: 100%;
-//     text-align: center;
-//     background-color: #454545;
-// }
-
-// footer a {
-//     color: #f9fbef;
-// }
-
-// .navbar {
-//     z-index: 2;
-//     position: sticky;
-//     top: 0;
-//     background-color: #454545;
-//     width: 100%;
-//     display: table;
-// }
-
-// .navbar b {
-//     display: table-cell;
-//     width: 15%;
-//     vertical-align: middle;
-//     text-align: center;
-// }
-
-// .navbar a {
-//     color: #5271ff;
-//     text-decoration: none;
-//     font-size: 1.5em;
-// }
-
-// .navbar a:hover {
-//     color: #f9fbef;
-// }
-
-// .blog-posts-container {
-//     align-items: center;
-// }
-
-// .blog-posts-container h2 {
-//     align-items: center;
-//     text-align: center;
-// }
-
-// .blog-post-card {
-//     display: block;
-//     margin: auto;
-//     margin-bottom: 1%;
-//     border: #5271ff solid 1px;
-//     border-radius: 2vh;
-//     min-width: 320px;
-//     width: 50%;
-//     color: #f9fbef;
-//     text-decoration: none;
-//     text-align: center;
-// }
-
-// .blog-post-card img {
-//     padding: 5%;
-//     width: 30%;
-//     height: 100%;
-//     background-repeat: no-repeat;
-//     object-fit: contain;
-//     background-position: center;
-// }
-
-// .blog-post-time {
-//     display: flex;
-//     align-items: center;
-//     justify-content: center;
-// }
-
-// .post-content * {
-//     padding: 2%;
-// }
-
-// .post-content img:nth-child(even) {
-//     float: left;
-// }
-// .post-content img:nth-child(odd) {
-//     float: right;
-// }
+.blog {
+    .card {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        .read-more {
+            text-decoration: none;
+            color: $rfont;
+            width: 100%;
+            border-radius: 0.2rem;
+            height: 2rem;
+            text-align: left;
+            &:hover {
+                background-color: $rgreen;
+            }
+        }
+        .blog-content {
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: left;
+            .time {
+                display: flex;
+                align-items: center;
+                justify-content: left;
+                i {
+                    margin-right: 1rem;
+                }
+            }
+        }
+    }
+}
 
 // pre,
 // code {
@@ -347,28 +293,4 @@ span.p-disable>p {
 //     border: 0;
 //     padding-right: 0 !important;
 //     padding-left: 0 !important;
-// }
-
-// .post-content {
-//     padding-left: 20%;
-//     padding-right: 20%;
-//     letter-spacing: normal;
-//     line-height: 1.5;
-// }
-
-// .header-image {
-//     background-position: center;
-//     background-repeat: no-repeat;
-//     background-size: cover;
-//     text-align: center;
-//     padding: 10%;
-// }
-
-// .about-person-cards {
-//     display: inline-block;
-//     margin: 1%;
-//     width: 30%;
-//     text-align: center;
-//     border: #5271ff solid 1px;
-//     border-radius: 2vh;
 // }
