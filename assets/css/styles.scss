@@ -252,35 +252,43 @@ span.p-disable > p {
     }
 }
 
-.blog {
-    .card {
+//blog card stuff
+.card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    img {
+        border: 2px solid $ryellow;
+        max-height: 20rem;
+        padding: 0;
+    }
+    .info {
+        border-bottom: 2px solid $ryellow;
+        padding-bottom: 2rem;
+    }
+    .read-more {
+        text-decoration: none;
+        color: $rfont;
+        width: 100%;
+        border-radius: 0.2rem;
+        height: 2rem;
+        text-align: left;
+        &:hover {
+            background-color: $rgreen;
+        }
+    }
+    .blog-content {
+        width: 100%;
         display: flex;
         flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        .read-more {
-            text-decoration: none;
-            color: $rfont;
-            width: 100%;
-            border-radius: 0.2rem;
-            height: 2rem;
-            text-align: left;
-            &:hover {
-                background-color: $rgreen;
-            }
-        }
-        .blog-content {
-            width: 100%;
+        justify-content: left;
+        .time {
             display: flex;
-            flex-direction: column;
+            align-items: center;
             justify-content: left;
-            .time {
-                display: flex;
-                align-items: center;
-                justify-content: left;
-                i {
-                    margin-right: 1rem;
-                }
+            i {
+                margin-right: 1rem;
             }
         }
     }
@@ -335,27 +343,39 @@ span.p-disable > p {
     }
 }
 
-.header-image {
-    padding: 10%;
-    text-align: center;
-    background-position: center;
-}
-
-.post-content {
-    width: 70%;
-    margin: auto;
-}
-
-.post-content img {
-    padding: 5%;
-}
-
-.post-content img:nth-child(even) {
-    float: left;
-}
-
-.post-content img:nth-child(odd) {
-    float: right;
+.blog-post {
+    .header-image {
+        padding: 10%;
+        text-align: center;
+        background-position: center;
+        h1 {
+            font-size: 4rem;
+        }
+    }
+    .post-content {
+        display: flex;
+        justify-content: center;
+        .content {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        img {
+            border: 2px solid $ryellow;
+            &:nth-child(even) {
+                float: left;
+                margin-right: 1rem;
+                margin-top: 1rem;
+                margin-bottom: 1rem;
+            }
+            &:nth-child(odd) {
+                float: right;
+                margin-left: 1rem;
+                margin-top: 1rem;
+                margin-bottom: 1rem;
+            }
+        }
+    }
 }
 
 // pre,

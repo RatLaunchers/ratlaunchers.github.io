@@ -1,14 +1,16 @@
 <div class="card content">
     <img src="{{ post.header }}"></img>
     <div class="blog-content">
-        <h2>{{ post.title }}</h2>
-        <div class="time">
-            <i class="far fa-calendar-alt"></i>
-            <div>{{ post.date | date: "%B %-d, %Y" }}</div>
-        </div>
-        <div class="time">
-            <i class="far fa-clock"></i>
-            <div>~{{ post.content | number_of_words | divided_by:180 }} mins</div>
+        <div class="info">
+            <h1>{{ post.title }}</h2>
+            <div class="time">
+                <i class="far fa-calendar-alt"></i>
+                <div>{{ post.date | date: "%B %-d, %Y" }}</div>
+            </div>
+            <div class="time">
+                <i class="far fa-clock"></i>
+                <div>~{{ post.content | number_of_words | divided_by:180 }} mins</div>
+            </div>
         </div>
         <p>{{ post.description }}</p>
     </div>
