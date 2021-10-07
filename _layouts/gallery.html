@@ -1,11 +1,18 @@
 ---
 layout: default
 ---
-<div class="gallery page" style="text-align: center;">
+<div class="gallery page">
   {% for date in site.data.gallery %}
-    <h2>{{ date[0] | date: "%B %-d, %Y" }}</h2>
-    {% for image in date[1].images %}
-      <img src="/assets/images/gallery/{{ image.image }}" alt="{{ image.desc }}">
-    {% endfor %}
+  <div class="section">
+    <h1>{{ date[0] | date: "%B %-d, %Y" }}</h1>
+    <div class="images">
+      {% for image in date[1].images %}
+      <div class="image">
+        <div class="drag-blocker"></div>
+        <img src="/assets/images/gallery/{{ date[0] }}/{{ image.image }}" alt="{{ image.desc }}">
+      </div>
+      {% endfor %}
+    </div>
+  </div>
   {% endfor %}
 </div>
