@@ -7,12 +7,23 @@
 $rblue: #5271ff;
 $rgreen: #32b498;
 $ryellow: #c9ad46;
-$rgrey: #4e4d53;
-$rdarkgrey: #3d3d5c;
+$rgrey: #302e38;
+$rdarkgrey: #23232a;
 $rred: #a45444;
 $rfont: #f9fbef;
-$rbackground: #545454;
-$rforeground: #605f64;
+$rbackground: #3a3a45;
+$rforeground: #595663;
+
+// Old Colors
+// $rblue: #5271ff;
+// $rgreen: #32b498;
+// $ryellow: #c9ad46;
+// $rgrey: #4e4d53;
+// $rdarkgrey: #3d3d5c;
+// $rred: #a45444;
+// $rfont: #f9fbef;
+// $rbackground: #545454;
+// $rforeground: #605f64;
 
 :root {
     background-color: $rbackground;
@@ -42,6 +53,7 @@ body {
     min-height: 100vh;
     display: flex;
     flex-direction: column;
+    min-width: 700px;
 }
 
 nav {
@@ -183,7 +195,12 @@ span.p-disable > p {
         width: 100%;
     }
     .spin-rat {
-        animation: 20s linear 0s infinite running rotate;
+        @media (min-width: 1000px) {
+            animation: 20s linear 0s infinite running rotate;
+        }
+        img:hover {
+            animation: 0.2s linear bob;
+        }
         height: 60%;
     }
 
@@ -202,10 +219,6 @@ span.p-disable > p {
             color: $rgreen;
             background-color: $rdarkgrey;
         }
-    }
-
-    .spin-rat img:hover {
-        animation: 0.2s linear bob;
     }
 
     @keyframes rotate {
@@ -293,7 +306,7 @@ span.p-disable > p {
 }
 
 .post-content img:nth-child(odd) {
-    float: right
+    float: right;
 }
 
 // pre,
