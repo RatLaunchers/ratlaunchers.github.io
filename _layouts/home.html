@@ -21,10 +21,8 @@ layout: default
         </div>
         {% endfor %}
     </div>
-    <div class="blog-posts-container">
-        <h2>Latest Rat Post</h2>
-        {% for post in site.posts limit: 1 %}
-        {% include blog_card.html %}
-        {% endfor %}
-    </div>
+    <h1>Latest Rat Post</h2>
+    {% for post in site.posts limit: 1 %}
+    {% include blog_card.html %}
+    {% endfor %}
 </div>
