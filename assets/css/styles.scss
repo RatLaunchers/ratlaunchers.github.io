@@ -381,6 +381,14 @@ span.p-disable > p {
     }
 }
 
+
+.blog-title-text {
+    background-color: $rgrey;
+    opacity: 0.7;
+    h1 {
+        opacity: 1;
+    }
+}
 // pre,
 // code {
 //     background-color: #454545;
