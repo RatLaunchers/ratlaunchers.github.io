@@ -10,7 +10,7 @@ As part of the CanSat Design Challenge, our primary goals are to record air temp
 So what hardware are we going to use to achieve this mission? Let’s find out!
 
 ## Primary System:
-![icon](https://raspberrypi.dk/wp-content/uploads/2017/04/raspberry-pi-zero-v1.3-256x256.png)
+![icon](https://s.cdnshm.com/catalog/ro/t/448291462/raspberry-pi-zero-2-w.jpg)
 Our primary system is based on a Raspberry Pi Zero 2 W. We chose the Pi Zero form factor due to its compact nature, its low power draw, and support for the Raspberry Pi camera. The Zero 2 W was released in the middle of our hardware selection process and chose it over the original Zero and Zero W because of massively increased processing power and the small price increase over the previous generations. The Pi Zero will collect the data from the sensors and camera and store it onto a 32GB microSD card.
 
 Because the primary mission is to collect the air temperature and pressure, we’ve used an Adafruit LPS25 Pressure Sensor and a DHT11 Temperature and Humidity Sensor. The LPS25 collects air pressure data and offers outstanding accuracy (±1 hPa) for a reasonable price. The DHT11s were graciously provided by our sponsor, the STEAM Project, and provides sufficiently accurate temperature data. In addition, the DHT11 provides the humidity data required in our secondary mission.
