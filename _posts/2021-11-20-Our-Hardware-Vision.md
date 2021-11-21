@@ -10,7 +10,7 @@ As part of the CanSat Design Challenge, our primary goals are to record air temp
 So what hardware are we going to use to achieve this mission? Let’s find out!
 
 ## Primary System:
-![icon](https://cdn.arstechnica.net/wp-content/uploads/2021/10/Raspberry-Pi-Zero-2-W-Hero.jpeg)
+![icon](https://raspberrypi.dk/wp-content/uploads/2017/04/raspberry-pi-zero-v1.3-256x256.png)
 Our primary system is based on a Raspberry Pi Zero 2 W. We chose the Pi Zero form factor due to its compact nature, its low power draw, and support for the Raspberry Pi camera. The Zero 2 W was released in the middle of our hardware selection process and chose it over the original Zero and Zero W because of massively increased processing power and the small price increase over the previous generations. The Pi Zero will collect the data from the sensors and camera and store it onto a 32GB microSD card.
 
 Because the primary mission is to collect the air temperature and pressure, we’ve used an Adafruit LPS25 Pressure Sensor and a DHT11 Temperature and Humidity Sensor. The LPS25 collects air pressure data and offers outstanding accuracy (±1 hPa) for a reasonable price. The DHT11s were graciously provided by our sponsor, the STEAM Project, and provides sufficiently accurate temperature data. In addition, the DHT11 provides the humidity data required in our secondary mission.
@@ -20,7 +20,7 @@ In order to gather the terrain data we need to achieve our secondary mission, we
 Most importantly, our secondary mission necessitates the use of a camera. In order to be able to determine plant health and create the fire simulation model, a photo must be taken while the CanSat is in its descent phase. The camera we’ve chosen is the Raspberry Pi Camera Module 2 NoIR. Based on the Sony IMX219, it provides sufficiently detailed images at up to 3280 x 2464 resolution and we are able to utilise the absence of an IR filter to assess plant health. It conveniently interfaces with the Pi Zero via a ribbon cable plugged into its CSI-2 connector.
 
 ## Backup System:
-![icon](https://asset.conrad.com/media10/isa/160267/c1/-/en/1172623_BB_00_FB/image.jpg)
+![icon](https://arduino-tutorials.net/public/img/parts/arduino-nano-nl.jpg)
 We decided to include a backup secondary system in order to provide redundancy in our CanSat. While not being able to capture all the data that the primary system can (such as taking photos) it’ll provide us with the enough data to fulfill the primary mission. This simplified system, in turn, requires little space, draws less power, and has less things to go wrong. This backup system will collect temperature, pressure, and humidity data and store it on an SD card.
 The data is collected by a pair of sensors: the BMP280 and another DHT11. The BMP280 will provide the pressure and temperature data. The Bosch-made BMP280 has incredible accuracy with a resolution of ±1 hPa and an ability to be used as an altimeter with ±1 meter accuracy. We chose to take the temperature data from the BMP280 (±1°C) because it is more accurate than the DHT11 (±2°C). The DHT11 will provide temperature data.
 
