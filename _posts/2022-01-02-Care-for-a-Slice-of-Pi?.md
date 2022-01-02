@@ -2,7 +2,7 @@
 layout: post
 title:  Care for a Slice of Pi?
 description: An update on our electronics and firmware progress
-header: assets/images/gallery/2021-12-30/rasppi.png
+header: /assets/images/gallery/2021-12-30/rasppi.png
 ---
 With the competition well underway, let’s take another look at our electronics! They’re almost done - they just need to undergo testing, have their issues rectified, and then be mounted onto the satellite! 
 
