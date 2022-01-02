@@ -7,7 +7,7 @@ header: assets/images/gallery/2021-12-30/rasppi.png
 With the competition well underway, let’s take another look at our electronics! They’re almost done - they just need to undergo testing, have their issues rectified, and then be mounted onto the satellite! 
 
 ## Raspberry Pi Zero 2 W
-![icon](assets/images/gallery/2021-12-30/rasppi.png)
+![icon](/assets/images/gallery/2021-12-30/rasppi.png)
 The firmware on our Raspberry Pi Zero 2W was written in Python and runs on Raspberry Pi OS. It is programmed to log values from our GPS, compass, pressure, humidity, and temperature sensors as well as take pictures from our Pi camera module for our secondary mission. All of the data is logged to a CSV file for analysis post launch.
 
 ### Interfacing with Sensors
@@ -19,5 +19,5 @@ The BN-880 GPS receiver was pretty simple to set up with the sensor attached to 
 The Raspberry Pi camera module ran into some issues due to current issues in the Raspberry Pi Linux kernel and libcamera stack on the Raspberry Pi Zero 2W. To fix these issues we are using the legacy version of Raspberry Pi OS with its older camera stack. Our firmware is programmed to take a picture every 10 seconds for our secondary mission.
 
 ## Arduino Nano
-![icon](assets/images/gallery/2021-12-30/arduinonano.png)
+![icon](/assets/images/gallery/2021-12-30/arduinonano.png)
 We also have an Arduino Nano based backup system on our satellite to record key data even if the Raspberry Pi system fails. It is equipped with a DHT11 temperature and humidity sensor, a BMP280 pressure and temperature sensor, and an SD card breakout board. The DHT11 sensor simply connects to the Arduino via a single digital pin, while the BMP280 uses the I2C interface, on pins A4 and A5 of the Arduino. Since it was possible to leverage pre-existing libraries for reading both sensors and for writing to the SD card, writing the firmware was fairly straightforward. The Arduino is programmed to read data from both sensors every second, writing the data to the SD card for analysis post flight.
