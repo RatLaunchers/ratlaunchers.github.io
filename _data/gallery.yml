@@ -2,6 +2,8 @@
   images:
     - image: "rasppi.png"
       desc: Raspberry PI
+    - image: "arduinonano.png"
+      desc: Arduino Nano
 2021-11-20:
   images:
     - image: "1637458958484.jpg"
