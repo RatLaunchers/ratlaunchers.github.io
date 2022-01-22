@@ -12,6 +12,24 @@ layout: default
         <img src="/assets/images/gallery/{{ date[0] }}/{{ image.image }}" alt="{{ image.desc }}">
       </div>
       {% endfor %}
+      {% for video in date[1].videos %}
+      <iframe
+        width="560"
+        height="315"
+        src="https://www.youtube.com/embed/{{ video.id }}"
+        title="YouTube video player"
+        frameborder="0"
+        allow="
+          accelerometer;
+          autoplay;
+          clipboard-write;
+          encrypted-media;
+          gyroscope;
+          picture-in-picture"
+        allowfullscreen>
+      </iframe>
+      
+      {% endfor %}
     </div>
   </div>
   {% endfor %}
