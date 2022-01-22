@@ -1,15 +1,12 @@
 2022-01-22:
   videos:
-    - id: grd-K33tOSM
+    - id: Y00JuhhcBnQ
 2021-12-30:
   images:
     - image: "rasppi.png"
       desc: Raspberry PI
     - image: "arduinonano.png"
       desc: Arduino Nano
-  videos:
-    - id: grd-K33tOSM
-    - id: grd-K33tOSM
 2021-11-20:
   images:
     - image: "1637458958484.jpg"
