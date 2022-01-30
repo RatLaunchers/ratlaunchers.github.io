@@ -1,6 +1,25 @@
+2022-01-30:
+  images:
+    - image: "1.jpg"
+      desc: "Parachute sewing"
+    - image: "2.jpg"
+      desc: "Sewn parachute"
+2022-01-29:
+  images:
+    - image: "demo_render.PNG"
+      desc: "CAD model updated rendering"
+    - image: "shell.jpg"
+      desc: "Shell 3D printing"
+    - image: "bodyprint.png"
+      desc: "Starting assembly"
 2022-01-22:
   videos:
     - id: Y00JuhhcBnQ
+  images:
+    - image: "chute.png"
+      desc: Parachute laser cut
+    - image: "chute1.png"
+      desc: Parachute laser cut 2
 2021-12-30:
   images:
     - image: "rasppi.png"
