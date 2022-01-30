@@ -39,16 +39,20 @@ Now, let’s figure out how big our hemispherical parachute has to be:
 ## Number Crunchin!
 
 Now that we have all the information we need, we can calculate required surface area:
+
 \[A=\frac{2mg}{C_D \rho v^2}\]
 \[A=\frac{2(0.325)(9.81)}{0.62(1.225)(8^2)}\]
 \[A=0.131182m^2\]
 \[A=1311.82cm^2\]
+
 We know that the surface area we calculated is actually the projected area: the area of the circle that makes up the bottom of the hemisphere. Well, now that we have the required surface area, let’s find how big we need the parachute sections to be. To do that, we’ll need to first find the radius of the bottom of the hemisphere:
+
 \[\pi r^2=1311.82\]
 \[r=20.43cm\]
 Having found the radius of the circle, we need to find the height of each parachute panel. We can do this by finding a quarter of the perimeter of a circle with the same radius:
 \[H=\frac{2 \pi (20.43)}{4}\]
 \[H=32.09cm\]
+
 Now we know that each panel has to have a height of 32.09cm.
 
 ## Designing the Parachute
@@ -64,8 +68,10 @@ As well, there’s holes in the bottom of each panel. These will be the points w
 ## Cutting to the Chase
 ![icon](/assets/images/paper_parachute.jpg)
 We first started by validating that, indeed, the parachute design would work. We printed out the panels at 90% scale so they could fit on a standard A4 paper. We then cut them out and taped them together to test the fit. Thankfully, everything fit together, so it was fine to move onwards.
+
 ![icon](/assets/images/gallery/2022-01-22/chute1.JPG)
 Once we tested the parachute with paper, we were ready to cut the final parachute using The STEAM Project’s 100W CO2 laser cutter, which has a bed measuring 1300mm x 900mm, more than large enough to cut the entire parachute at once. The parachute design was in an SVG file, which was loaded onto a computer connected to the laser cutter. Small test squares were cut out of the parachute material to dial in speed and laser power settings, and once optimal settings were found, the parachute file was sent to the laser cutter, and it was cut out in around two minutes.
+
 ![icon](/assets/images/gallery/2022-01-30/1.jpg)
 Once the parachute has been cut, we can then sew the panels together. After having been sewn together, the parachute adopts its intended hemispherical shape.
 
