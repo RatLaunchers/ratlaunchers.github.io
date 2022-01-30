@@ -19,10 +19,10 @@ So how are we going to achieve that? To be able to withstand the force required,
 ## What Math Do We Have to Do?
 
 Let’s take a look at how we’ll calculate what parachute we’ll need. As per the European Space Agency, the formula for this is the following:
-\[A=\frac{2mg}{C_D \rho v^2}\]
-Where \(A\) = canopy surface area, \(m\) = mass of the satellite, \(g\) = acceleration due to gravity, \(C_D\) = drag coefficient of the parachute, \(\rho\) = local density of the air, \(v\) = descent velocity in m/s.
+$$A=\frac{2mg}{C_D \rho v^2}$$
+Where $$A$$ = canopy surface area, $$m$$ = mass of the satellite, $$g$$ = acceleration due to gravity, $$C_D$$ = drag coefficient of the parachute, $$\rho$$ = local density of the air, $$v$$ = descent velocity in m/s.
 
-We know that the mass of the satellite is approximately 325g and the acceleration due to gravity is approximately \(9.81m/s^2\). The local density of the air is assumed to be constant at \(1.225kg/m^3\), and we'll aim for a descent velocity of 8m/s to provide us some buffer room. If it's too slow, we can always cut the parachute down. It's a lot harder to make it bigger. As for the coefficient of drag, that'll depend on what shape of parachute we choose. Let's look into that.
+We know that the mass of the satellite is approximately 325g and the acceleration due to gravity is approximately $$9.81m/s^2$$. The local density of the air is assumed to be constant at $$1.225kg/m^3$$, and we'll aim for a descent velocity of 8m/s to provide us some buffer room. If it's too slow, we can always cut the parachute down. It's a lot harder to make it bigger. As for the coefficient of drag, that'll depend on what shape of parachute we choose. Let's look into that.
 
 ## Decisions, Decisions…
 ![icon](/assets/images/parachute_shapes.png)
@@ -40,18 +40,18 @@ Now, let’s figure out how big our hemispherical parachute has to be:
 
 Now that we have all the information we need, we can calculate required surface area:
 
-\[A=\frac{2mg}{C_D \rho v^2}\]
-\[A=\frac{2(0.325)(9.81)}{0.62(1.225)(8^2)}\]
-\[A=0.131182m^2\]
-\[A=1311.82cm^2\]
+$$A=\frac{2mg}{C_D \rho v^2}$$  
+$$A=\frac{2(0.325)(9.81)}{0.62(1.225)(8^2)}$$  
+$$A=0.131182m^2$$  
+$$A=1311.82cm^2$$
 
 We know that the surface area we calculated is actually the projected area: the area of the circle that makes up the bottom of the hemisphere. Well, now that we have the required surface area, let’s find how big we need the parachute sections to be. To do that, we’ll need to first find the radius of the bottom of the hemisphere:
 
-\[\pi r^2=1311.82\]
-\[r=20.43cm\]
-Having found the radius of the circle, we need to find the height of each parachute panel. We can do this by finding a quarter of the perimeter of a circle with the same radius:
-\[H=\frac{2 \pi (20.43)}{4}\]
-\[H=32.09cm\]
+$$\pi r^2=1311.82$$  
+$$r=20.43cm$$  
+Having found the radius of the circle, we need to find the height of each parachute panel. We can do this by finding a quarter of the perimeter of a circle with the same radius:  
+$$H=\frac{2 \pi (20.43)}{4}$$  
+$$H=32.09cm$$
 
 Now we know that each panel has to have a height of 32.09cm.
 
