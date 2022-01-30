@@ -1,10 +1,14 @@
 2022-01-30:
+  videos:
+    - id: GI1Hd6_lB70
   images:
     - image: "1.jpg"
       desc: "Parachute sewing"
     - image: "2.jpg"
       desc: "Sewn parachute"
 2022-01-29:
+  videos:
+    - id: U2Ntr4Z72pM
   images:
     - image: "demo_render.PNG"
       desc: "CAD model updated rendering"
