@@ -48,8 +48,10 @@ $$A=1311.82cm^2$$
 We know that the surface area we calculated is actually the projected area: the area of the circle that makes up the bottom of the hemisphere. Well, now that we have the required surface area, let’s find how big we need the parachute sections to be. To do that, we’ll need to first find the radius of the bottom of the hemisphere:
 
 $$\pi r^2=1311.82$$  
-$$r=20.43cm$$  
-Having found the radius of the circle, we need to find the height of each parachute panel. We can do this by finding a quarter of the perimeter of a circle with the same radius:  
+$$r=20.43cm$$
+
+Having found the radius of the circle, we need to find the height of each parachute panel. We can do this by finding a quarter of the perimeter of a circle with the same radius: 
+
 $$H=\frac{2 \pi (20.43)}{4}$$  
 $$H=32.09cm$$
 
