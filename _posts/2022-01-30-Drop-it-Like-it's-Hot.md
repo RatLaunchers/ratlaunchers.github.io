@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  Drop it Like it's Hot!
-description: An in depth look at the hardware we'll be using this year
+description: Designing and manufacturing the parachute
 header: /assets/images/gallery/2022-01-30/2.jpg
 ---
 Woah! We’re falling, but how do we stop it? That’s right: with a parachute!
