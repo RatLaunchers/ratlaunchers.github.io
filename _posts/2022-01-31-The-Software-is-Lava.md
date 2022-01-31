@@ -16,12 +16,14 @@ From the image we are able to extract moisture, and packing ratio (the material 
 
 Within each of these blocks the average color is taken to obtain the required values. For example the moisture content is found by analyzing how “dry” of a color the square is. We establish what “dry” means by examining mostly the green value, however the other colors are also important. If we were to ignore the other colors we would assume all squares with 255 green are super moist, but what if the red value was also 255? Then we wouldn’t have a super moist section of ground, we might have someone's pumpkin field! This is done in Python specifically the Pillow image processing library
 ![pillow](https://warehouse-camo.ingress.cmh1.psfhosted.org/7bc42058d2d94edfcc0533b1566dabea85076a76/68747470733a2f2f7261772e67697468756275736572636f6e74656e742e636f6d2f707974686f6e2d70696c6c6f772f70696c6c6f772d6c6f676f2f6d61696e2f70696c6c6f772d6c6f676f2d323438783235302e706e67)
+
 ![icon](/assets/images/the_software_is_lava/unprocessed.png)
 ![icon](/assets/images/the_software_is_lava/chunked.png)
 ![icon](/assets/images/the_software_is_lava/moisture.png)
 Sample image -> data chunks -> 30% moisture content analysis
 
 Elevation data is not recorded by our satellite and as such must be sourced from an external source. Thankfully the location of our satellite is recorded with a GPS module so we are not totally in the dark. By using the Open-Elevation (https://open-elevation.com/) API, we are able to find the elevation at any point on the globe. So to find the elevation across our image we must find a set of points that span across our image. This is a more complicated task than it seems. Latitude and longitude are measurements derived as the angle from the equator and prime meridian respectively, as such there is not a one to one correspondence that we can add to get a grid of geolocation points across our image. Thankfully there exists a library that makes latitude and longitude calculations easy https://github.com/chrisveness/geodesy. The elevation API does not have infinite precision, so we only find a coordinate point every 90 meters. After finding the grid of coordinates the API returns the elevation at each point. This gives us the elevation above sea level in a 90 meter block grid across the image. We can improve this blockiness with interpolation. Specifically we use bilinear interpolation to smooth the edges and provide more of a gradient between the elevation points. This can be seen in the below two images, the first being the data we get from the API, and the second being after interpolation, this method allows us to estimate the real elevation of points outside of the level of precision that the API has.
+
 ![icon](/assets/images/the_software_is_lava/raw.png)
 ![icon](/assets/images/the_software_is_lava/interpolated.png)
 The values measured for each property are then put into a json file for the simulation to use.
@@ -62,6 +64,7 @@ Oops, maybe not so simple looking, but I assure you the input is quite simple. B
 3. Update how much the unit is on fire
 4. Update how much left the unit can burn
 5. Repeat steps 1-4
+
 ![icon](/assets/images/the_software_is_lava/one.png)
 ![icon](/assets/images/the_software_is_lava/two.png)
 ![icon](/assets/images/the_software_is_lava/three.png)
