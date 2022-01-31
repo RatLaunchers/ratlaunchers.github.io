@@ -17,6 +17,7 @@ From the image we are able to extract moisture, and packing ratio (the material 
 Within each of these blocks the average color is taken to obtain the required values. For example the moisture content is found by analyzing how “dry” of a color the square is. We establish what “dry” means by examining mostly the green value, however the other colors are also important. If we were to ignore the other colors we would assume all squares with 255 green are super moist, but what if the red value was also 255? Then we wouldn’t have a super moist section of ground, we might have someone's pumpkin field! This is done in Python specifically the Pillow image processing library
 ![pillow](https://warehouse-camo.ingress.cmh1.psfhosted.org/7bc42058d2d94edfcc0533b1566dabea85076a76/68747470733a2f2f7261772e67697468756275736572636f6e74656e742e636f6d2f707974686f6e2d70696c6c6f772f70696c6c6f772d6c6f676f2f6d61696e2f70696c6c6f772d6c6f676f2d323438783235302e706e67)
 
+|Sample Image|Data Chunks|30% Moisture Content Analysis|
 |-|-|-|
 |![icon](/assets/images/the_software_is_lava/unprocessed.png)|![icon](/assets/images/the_software_is_lava/chunked.png)|![icon](/assets/images/the_software_is_lava/moisture.png)|
 Sample image -> data chunks -> 30% moisture content analysis
