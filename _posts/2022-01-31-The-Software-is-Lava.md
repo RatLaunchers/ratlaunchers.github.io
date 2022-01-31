@@ -48,7 +48,7 @@ V&=\text{Wind Speed (mi/h)}\\
 \beta&=\text{Packing Ratio}\\
 \varphi&=\text{Slope of the fuel bed, so that }\tan(\varphi)\text{ = rise/run}
 \end{aligned}
-$$
+$$.
 
 
 Oops, maybe not so simple looking, but I assure you the input is quite simple. By inputting moisture, packing ratio, the direction of the wind and the incline of the slope (how much the elevation changes from one end to another). The equation returns the rate of spread in feet per minute of the fire. For the sake of simplicity a unit can set other units of fire when it is fully on fire. As such the simulator steps can be done as follows: 
