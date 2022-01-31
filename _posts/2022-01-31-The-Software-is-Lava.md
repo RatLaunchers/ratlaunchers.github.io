@@ -65,9 +65,12 @@ Oops, maybe not so simple looking, but I assure you the input is quite simple. B
 4. Update how much left the unit can burn
 5. Repeat steps 1-4
 
+
 ![icon](/assets/images/the_software_is_lava/one.png)
 ![icon](/assets/images/the_software_is_lava/two.png)
 ![icon](/assets/images/the_software_is_lava/three.png)
+
+
 An example of how the cycles play out can be found in the above images. In the first image the units in the top left spread their fire to the other units. In the second image one of the units burns out, while the fire spreads within the other units. In the last image, the fire has fully spread within the previous units and can now spread to the next units.
 
 We wanted the simulator to be easily accessible, and to achieve this we the simulation is written in Javascript enabling it to be run client side on a web browser, meaning anyone can access it without downloading anyfiles.
