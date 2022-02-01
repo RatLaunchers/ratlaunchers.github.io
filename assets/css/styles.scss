@@ -169,6 +169,12 @@ span.p-disable > p {
     margin-top: 2.5rem;
 }
 
+.not-post {
+    p {
+        width: 100%;
+    }
+}
+
 .page {
     display: flex;
     flex-direction: column;

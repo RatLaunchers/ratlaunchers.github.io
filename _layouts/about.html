@@ -2,8 +2,8 @@
 layout: default
 ---
 <div class="about page">
-    <div class="content">{{ content | markdownify }}</div>
-    <div class="content">
+    <div class="content not-post">{{ content | markdownify }}</div>
+    <div class="content not-post">
         <h2>The Team</h2>
         <div class="person-container">
             {% for person in site.data.about.about %}
