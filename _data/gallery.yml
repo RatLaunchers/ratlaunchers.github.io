@@ -1,3 +1,23 @@
+2022-03-27:
+  images:
+    - image: "PXL_20220327_200830502.jpg"
+      desc: "Satellite on scale"
+    - image: "PXL_20220327_214010121.jpg"
+      desc: "Satellite exterior"
+    - image: "PXL_20220327_214058301.jpg"
+      desc: "Satellite, top shot of interior"
+    - image: "PXL_20220327_214248129.jpg"
+      desc: "Satellite side shot 1"
+    - image: "PXL_20220327_214355678.jpg"
+      desc: "Satellite side shot 2"
+    - image: "PXL_20220327_214413387.jpg"
+      desc: "Satellite side shot 3"
+    - image: "PXL_20220327_214417996.jpg"
+      desc: "Satellite side shot 4"
+    - image: "PXL_20220327_214706707.jpg"
+      desc: "Satellite half open shot 1"
+    - image: "PXL_20220327_214732764.jpg"
+      desc: "Satellite half open shot 2"
 2022-03-20:
   images:
     - image: "PXL_20220320_210845163.jpg"
